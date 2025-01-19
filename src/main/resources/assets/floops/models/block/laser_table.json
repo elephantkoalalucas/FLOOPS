@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "floops:block/laser_table_block_texture_bottom",
+    "up": "floops:block/laser_table_block_texture",
+    "north": "floops:block/laser_table_block_texture_sides",
+    "east": "floops:block/laser_table_block_texture_sides",
+    "south": "floops:block/laser_table_block_texture_sides",
+    "west": "floops:block/laser_table_block_texture_sides",
+    "particle": "floops:block/laser_table_block_texture_bottom"
+  },
+  "render_type": "solid"
+}

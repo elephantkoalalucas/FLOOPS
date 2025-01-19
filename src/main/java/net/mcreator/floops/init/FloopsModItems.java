@@ -22,6 +22,7 @@ import net.mcreator.floops.item.SilverAxeItem;
 import net.mcreator.floops.item.SilverArmorItem;
 import net.mcreator.floops.item.LaserStaffItem;
 import net.mcreator.floops.item.LaserHandleItem;
+import net.mcreator.floops.item.LaserDimensionItem;
 import net.mcreator.floops.item.LaserCrystalItem;
 import net.mcreator.floops.item.LaserBowItem;
 import net.mcreator.floops.item.LaserBladeItem;
@@ -48,6 +49,11 @@ public class FloopsModItems {
 	public static final DeferredItem<Item> SILVER_ARMOR_LEGGINGS = REGISTRY.register("silver_armor_leggings", SilverArmorItem.Leggings::new);
 	public static final DeferredItem<Item> SILVER_ARMOR_BOOTS = REGISTRY.register("silver_armor_boots", SilverArmorItem.Boots::new);
 	public static final DeferredItem<Item> LASER_STAFF = REGISTRY.register("laser_staff", LaserStaffItem::new);
+	public static final DeferredItem<Item> LASER_TABLE = block(FloopsModBlocks.LASER_TABLE);
+	public static final DeferredItem<Item> LASER_FLOOR = block(FloopsModBlocks.LASER_FLOOR);
+	public static final DeferredItem<Item> LASER_DIMENSION = REGISTRY.register("laser_dimension", LaserDimensionItem::new);
+	public static final DeferredItem<Item> LASER_LEAF = block(FloopsModBlocks.LASER_LEAF);
+	public static final DeferredItem<Item> LASER_STEM = block(FloopsModBlocks.LASER_STEM);
 
 	// Start of user code block custom items
 	// End of user code block custom items

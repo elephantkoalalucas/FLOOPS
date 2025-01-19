@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "floops:laser_floor",
+    "minecraft:redstone_block"
+  ]
+}

@@ -99,7 +99,6 @@
       "registry_name": "laserscorpion",
       "metadata": {
         "files": [
-          "src/main/resources/data/floops/neoforge/biome_modifier/laserscorpion_biome_modifier.json",
           "src/main/resources/assets/floops/models/item/laserscorpion_spawn_egg.json",
           "src/main/java/net/mcreator/floops/client/renderer/LaserscorpionRenderer.java",
           "src/main/java/net/mcreator/floops/entity/LaserscorpionEntity.java"
@@ -413,6 +412,120 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "ManaBar",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/floops/client/screens/ManaBarOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "LaserTable",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/floops/loot_table/blocks/laser_table.json",
+          "src/main/resources/assets/floops/models/block/laser_table.json",
+          "src/main/java/net/mcreator/floops/block/LaserTableBlock.java",
+          "src/main/resources/assets/floops/blockstates/laser_table.json",
+          "src/main/resources/assets/floops/models/item/laser_table.json"
+        ]
+      }
+    },
+    {
+      "name": "LaserFloor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_floor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/floops/blockstates/laser_floor.json",
+          "src/main/resources/data/floops/loot_table/blocks/laser_floor.json",
+          "src/main/resources/assets/floops/models/block/laser_floor.json",
+          "src/main/resources/assets/floops/models/item/laser_floor.json",
+          "src/main/java/net/mcreator/floops/block/LaserFloorBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "LaserForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/floops/worldgen/biome/laser_forest.json",
+          "src/main/java/net/mcreator/floops/world/features/treedecorators/LaserForestTrunkDecorator.java",
+          "src/main/java/net/mcreator/floops/world/features/treedecorators/LaserForestLeaveDecorator.java",
+          "src/main/resources/data/floops/worldgen/placed_feature/laser_forest_tree.json",
+          "src/main/resources/data/floops/worldgen/configured_feature/laser_forest_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "LaserDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/floops/dimension_type/laser_dimension.json",
+          "src/main/resources/assets/floops/blockstates/laser_dimension_portal.json",
+          "src/main/resources/assets/floops/models/block/laser_dimension_portal_ew.json",
+          "src/main/java/net/mcreator/floops/item/LaserDimensionItem.java",
+          "src/main/resources/data/floops/dimension/laser_dimension.json",
+          "src/main/resources/assets/floops/models/block/laser_dimension_portal_ns.json",
+          "src/main/java/net/mcreator/floops/world/dimension/LaserDimensionDimension.java",
+          "src/main/java/net/mcreator/floops/block/LaserDimensionPortalBlock.java",
+          "src/main/java/net/mcreator/floops/world/teleporter/LaserDimensionTeleporter.java",
+          "src/main/java/net/mcreator/floops/world/teleporter/LaserDimensionPortalShape.java",
+          "src/main/resources/assets/floops/models/item/laser_dimension.json"
+        ]
+      }
+    },
+    {
+      "name": "LaserLeaf",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_leaf",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/floops/block/LaserLeafBlock.java",
+          "src/main/resources/data/floops/loot_table/blocks/laser_leaf.json",
+          "src/main/resources/assets/floops/models/item/laser_leaf.json",
+          "src/main/resources/assets/floops/blockstates/laser_leaf.json",
+          "src/main/resources/assets/floops/models/block/laser_leaf.json"
+        ]
+      }
+    },
+    {
+      "name": "LaserStem",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "laser_stem",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/floops/models/block/laser_stem.json",
+          "src/main/java/net/mcreator/floops/block/LaserStemBlock.java",
+          "src/main/resources/assets/floops/blockstates/laser_stem.json",
+          "src/main/resources/data/floops/loot_table/blocks/laser_stem.json",
+          "src/main/resources/assets/floops/models/item/laser_stem.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -430,6 +543,13 @@
     ],
     "ITEMS:minecraft:hoes": [
       "~CUSTOM:SilverHoe"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:LaserFloor",
+      "~Blocks.REDSTONE_BLOCK"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:LaserLeaf"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:SilverBlock",
@@ -461,25 +581,31 @@
   "language_map": {
     "en_us": {
       "block.floops.silver_ore": "Silver Ore",
+      "block.floops.laser_leaf": "Laser Leaf",
       "item.floops.laser_handle": "Laser Handle",
       "item.floops.silver_armor_leggings": "Silver Leggings",
-      "item.floops.laser_bow": "Laser Bow",
+      "biome.floops.laser_forest": "Laser Forest",
       "item.floops.laser_soldier_spawn_egg": "Laser Soldier Spawn Egg",
-      "entity.floops.laser_soldier": "Laser Soldier",
-      "item.floops.silver_sword": "Silver Sword",
-      "item.floops.silver_hoe": "Silver Hoe",
+      "item.floops.laser_dimension": "Laser Orb",
       "block.floops.silver_block": "Block of Silver",
-      "item.floops.silver_armor_boots": "Silver Boots",
       "item.floops.silver_armor_chestplate": "Silver Chestplate",
-      "item.floops.laser_crystal": "Laser Crystal",
-      "item.floops.laser_blade": "Laser Blade",
       "item.floops.silver_pickaxe": "Silver Pickaxe",
-      "item.floops.silver_ingot": "Silver",
       "entity.floops.laserscorpion": "Laser scorpion",
       "item_group.floops.lt": "LT",
       "item.floops.silver_armor_helmet": "Silver Helmet",
-      "item.floops.silver_shovel": "Silver Shovel",
       "item.floops.silver_axe": "Silver Axe",
+      "block.floops.laser_stem": "Laser Stem",
+      "item.floops.laser_bow": "Laser Bow",
+      "entity.floops.laser_soldier": "Laser Soldier",
+      "block.floops.laser_floor": "Laser Floor",
+      "item.floops.silver_sword": "Silver Sword",
+      "item.floops.silver_hoe": "Silver Hoe",
+      "block.floops.laser_table": "Laser Table",
+      "item.floops.silver_armor_boots": "Silver Boots",
+      "item.floops.laser_crystal": "Laser Crystal",
+      "item.floops.laser_blade": "Laser Blade",
+      "item.floops.silver_ingot": "Silver",
+      "item.floops.silver_shovel": "Silver Shovel",
       "item.floops.laser_staff": "Laser Staff",
       "item.floops.laserscorpion_spawn_egg": "Laser scorpion Spawn Egg"
     }

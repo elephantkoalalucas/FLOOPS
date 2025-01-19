@@ -47,19 +47,19 @@
       "value": "CUSTOM:LaserBlade"
     },
     "equipmentOffHand": {
-      "value": "CUSTOM:LaserBow"
+      "value": ""
     },
     "equipmentHelmet": {
-      "value": "Items.IRON_HELMET"
+      "value": ""
     },
     "equipmentBody": {
-      "value": "Items.IRON_CHESTPLATE"
+      "value": ""
     },
     "equipmentLeggings": {
-      "value": "Items.IRON_LEGGINGS"
+      "value": ""
     },
     "equipmentBoots": {
-      "value": "Items.IRON_BOOTS"
+      "value": ""
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "ILLAGER",

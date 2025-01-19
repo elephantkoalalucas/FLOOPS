@@ -24,6 +24,7 @@ public class FloopsModTabs {
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> LT = REGISTRY.register("lt",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.floops.lt")).icon(() -> new ItemStack(FloopsModItems.LASER_CRYSTAL.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(FloopsModItems.LASER_STAFF.get());
+				tabData.accept(FloopsModItems.LASER_DIMENSION.get());
 			})
 
 					.build());

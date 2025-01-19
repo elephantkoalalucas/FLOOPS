@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "floops:block/laser_leaf_block_texture",
+    "particle": "floops:block/laser_leaf_block_texture"
+  }
+}

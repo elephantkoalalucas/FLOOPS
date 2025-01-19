@@ -9,7 +9,6 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.monster.Zombie;
@@ -44,11 +43,6 @@ public class LaserSoldierEntity extends Zombie {
 		xpReward = 7;
 		setNoAi(false);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(FloopsModItems.LASER_BLADE.get()));
-		this.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(FloopsModItems.LASER_BOW.get()));
-		this.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.IRON_HELMET));
-		this.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));
-		this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Items.IRON_LEGGINGS));
-		this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.IRON_BOOTS));
 	}
 
 	@Override

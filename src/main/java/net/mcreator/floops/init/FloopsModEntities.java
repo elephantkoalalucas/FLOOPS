@@ -31,7 +31,7 @@ public class FloopsModEntities {
 	public static final DeferredHolder<EntityType<?>, EntityType<LaserscorpionEntity>> LASERSCORPION = register("laserscorpion",
 			EntityType.Builder.<LaserscorpionEntity>of(LaserscorpionEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.sized(1f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

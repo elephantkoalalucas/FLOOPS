@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "floops:block/laser_wood_top_block_texture",
+    "up": "floops:block/laser_wood_top_block_texture",
+    "north": "floops:block/laser_wood_side_block_texture",
+    "east": "floops:block/laser_wood_side_block_texture",
+    "south": "floops:block/laser_wood_side_block_texture",
+    "west": "floops:block/laser_wood_side_block_texture",
+    "particle": "floops:block/laser_wood_top_block_texture"
+  },
+  "render_type": "solid"
+}
