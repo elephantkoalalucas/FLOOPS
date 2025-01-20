@@ -35,7 +35,6 @@ public class FloopsModItems {
 	public static final DeferredItem<Item> LASER_CRYSTAL = REGISTRY.register("laser_crystal", LaserCrystalItem::new);
 	public static final DeferredItem<Item> LASER_HANDLE = REGISTRY.register("laser_handle", LaserHandleItem::new);
 	public static final DeferredItem<Item> LASER_SOLDIER_SPAWN_EGG = REGISTRY.register("laser_soldier_spawn_egg", () -> new DeferredSpawnEggItem(FloopsModEntities.LASER_SOLDIER, -16776961, -10066330, new Item.Properties()));
-	public static final DeferredItem<Item> LASERSCORPION_SPAWN_EGG = REGISTRY.register("laserscorpion_spawn_egg", () -> new DeferredSpawnEggItem(FloopsModEntities.LASERSCORPION, -1, -1, new Item.Properties()));
 	public static final DeferredItem<Item> SILVER_INGOT = REGISTRY.register("silver_ingot", SilverIngotItem::new);
 	public static final DeferredItem<Item> SILVER_ORE = block(FloopsModBlocks.SILVER_ORE);
 	public static final DeferredItem<Item> SILVER_BLOCK = block(FloopsModBlocks.SILVER_BLOCK);

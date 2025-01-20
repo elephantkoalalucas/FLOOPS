@@ -9,7 +9,6 @@
   "block.floops.silver_block": "Block of Silver",
   "item.floops.silver_armor_chestplate": "Silver Chestplate",
   "item.floops.silver_pickaxe": "Silver Pickaxe",
-  "entity.floops.laserscorpion": "Laser scorpion",
   "item_group.floops.lt": "LT",
   "item.floops.silver_armor_helmet": "Silver Helmet",
   "item.floops.silver_axe": "Silver Axe",
@@ -25,6 +24,5 @@
   "item.floops.laser_blade": "Laser Blade",
   "item.floops.silver_ingot": "Silver",
   "item.floops.silver_shovel": "Silver Shovel",
-  "item.floops.laser_staff": "Laser Staff",
-  "item.floops.laserscorpion_spawn_egg": "Laser scorpion Spawn Egg"
+  "item.floops.laser_staff": "Laser Staff"
 }

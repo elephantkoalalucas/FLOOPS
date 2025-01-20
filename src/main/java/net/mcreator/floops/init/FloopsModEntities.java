@@ -16,7 +16,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.floops.entity.LaserscorpionEntity;
 import net.mcreator.floops.entity.LaserSoldierEntity;
 import net.mcreator.floops.entity.LaserEntity;
 import net.mcreator.floops.FloopsMod;
@@ -28,10 +27,6 @@ public class FloopsModEntities {
 			EntityType.Builder.<LaserEntity>of(LaserEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<LaserSoldierEntity>> LASER_SOLDIER = register("laser_soldier",
 			EntityType.Builder.<LaserSoldierEntity>of(LaserSoldierEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(50).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
-	public static final DeferredHolder<EntityType<?>, EntityType<LaserscorpionEntity>> LASERSCORPION = register("laserscorpion",
-			EntityType.Builder.<LaserscorpionEntity>of(LaserscorpionEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.sized(1f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -42,12 +37,10 @@ public class FloopsModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		LaserSoldierEntity.init(event);
-		LaserscorpionEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(LASER_SOLDIER.get(), LaserSoldierEntity.createAttributes().build());
-		event.put(LASERSCORPION.get(), LaserscorpionEntity.createAttributes().build());
 	}
 }

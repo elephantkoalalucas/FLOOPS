@@ -48,7 +48,6 @@ public class FloopsModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 
 			tabData.accept(FloopsModItems.LASER_SOLDIER_SPAWN_EGG.get());
-			tabData.accept(FloopsModItems.LASERSCORPION_SPAWN_EGG.get());
 
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 

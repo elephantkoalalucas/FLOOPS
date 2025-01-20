@@ -11,7 +11,6 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.mcreator.floops.client.renderer.LaserscorpionRenderer;
 import net.mcreator.floops.client.renderer.LaserSoldierRenderer;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -20,6 +19,5 @@ public class FloopsModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(FloopsModEntities.LASER.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(FloopsModEntities.LASER_SOLDIER.get(), LaserSoldierRenderer::new);
-		event.registerEntityRenderer(FloopsModEntities.LASERSCORPION.get(), LaserscorpionRenderer::new);
 	}
 }
